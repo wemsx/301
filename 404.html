@@ -1,0 +1,17 @@
+<script src="http://cdn.bootcss.com/purl/2.3.1/purl.min.js"></script>
+
+<script>
+var url = purl();
+if (url.attr('host') == 'ihtc.cc') {
+    var old_url = url.attr('source');
+    var new_url = old_url.replace('pm.app.wemsx.top', "paste-thewems.koyeb.app");
+    window.location.replace(new_url); 
+}else if (url.attr('host') == 'www.pm.app.wemsx.top') {
+    var old_url = url.attr('source');
+    var new_url = old_url.replace('www.pm.app.wemsx.top', "naive.run.goorm.io");
+    window.location.replace(new_url);
+}else {
+    window.location.href="https://wemsx.top";
+}
+    
+</script>
